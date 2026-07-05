@@ -1,3 +1,19 @@
 dependencies {
+    //General modules dependencies
     implementation project(':erp-domain')
+    implementation project(':erp-common')
+    implementation project(':erp-application')
+
+    //SQL
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly ("org.postgresql:postgresql:42.7.11")
+
+    //Mongo
+    implementation 'org.springframework.boot:spring-boot-starter-mongodb'
+
+    //Redis
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
 }

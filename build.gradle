@@ -37,6 +37,18 @@ subprojects {
         testAnnotationProcessor 'org.projectlombok:lombok'
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
         testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+
+        // Lombok setup
+        compileOnly 'org.projectlombok:lombok:1.18.34'
+        annotationProcessor 'org.projectlombok:lombok:1.18.34'
+
+        // MapStruct setup
+        implementation 'org.mapstruct:mapstruct:1.6.3'
+        annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.3'
+
+        // Crucial Binding Library
+        annotationProcessor 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
     }
 
     tasks.named('test') {
