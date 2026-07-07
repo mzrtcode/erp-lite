@@ -1,4 +1,4 @@
-package com.mzrt.erp_lite.adapter.out.persistence;
+package com.mzrt.erp_lite.adapter.out.persistence.jpa.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
