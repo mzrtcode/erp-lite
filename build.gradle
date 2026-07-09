@@ -40,8 +40,8 @@ subprojects {
 
 
         // Lombok setup
-        compileOnly 'org.projectlombok:lombok:1.18.34'
-        annotationProcessor 'org.projectlombok:lombok:1.18.34'
+        compileOnly 'org.projectlombok:lombok:1.18.46'
+        annotationProcessor 'org.projectlombok:lombok:1.18.46'
 
         // MapStruct setup
         implementation 'org.mapstruct:mapstruct:1.6.3'

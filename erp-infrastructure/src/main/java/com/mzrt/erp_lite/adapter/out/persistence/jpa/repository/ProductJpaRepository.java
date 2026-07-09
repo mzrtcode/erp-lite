@@ -1,4 +1,4 @@
-package com.mzrt.erp_lite.adapter.out.persistence.jpa.entity.repository;
+package com.mzrt.erp_lite.adapter.out.persistence.jpa.repository;
 
 import com.mzrt.erp_lite.adapter.out.persistence.jpa.entity.ProductJpaEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
