@@ -1,19 +1,28 @@
+// 📦 Este módulo es una librería, no una app ejecutable
+
+plugins {
+    id 'java-library'
+}
+
 dependencies {
-    //General modules dependencies
-    implementation project(':erp-domain')
-    implementation project(':erp-common')
-    implementation project(':erp-application')
+    // 🔗 Módulos propios que otros módulos pueden usar
+    // api = me exporto como API para otros módulos
+    api project(':erp-domain')
+    api project(':erp-common')
+    api project(':erp-application')
 
-    //SQL
+    // 🧩 Dependencias internas de Spring
+    // implementation = uso interno, no lo expongo
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    runtimeOnly ("org.postgresql:postgresql:42.7.11")
+    runtimeOnly 'org.postgresql:postgresql:42.7.11'
 
-    //Mongo
+    // 🗄️ Mongo
     implementation 'org.springframework.boot:spring-boot-starter-mongodb'
 
-    //Redis
+    // ⚡ Redis
     implementation 'org.springframework.boot:spring-boot-starter-data-redis'
     implementation 'org.springframework.boot:spring-boot-starter-cache'
 
+    // ✅ Validación
     implementation 'org.springframework.boot:spring-boot-starter-validation'
 }
