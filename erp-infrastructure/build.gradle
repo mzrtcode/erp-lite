@@ -17,7 +17,7 @@ dependencies {
     runtimeOnly 'org.postgresql:postgresql:42.7.11'
 
     // 🗄️ Mongo
-    implementation 'org.springframework.boot:spring-boot-starter-mongodb'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 
     // ⚡ Redis
     implementation 'org.springframework.boot:spring-boot-starter-data-redis'
