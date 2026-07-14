@@ -13,6 +13,7 @@ import lombok.Getter;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Currency;
 import java.util.List;
 
 /**
@@ -246,7 +247,7 @@ public class Order extends AggregateRoot<OrderId> {
             throw new IllegalArgumentException("Order items cannot be empty");
         }
 
-        java.util.Currency firstCurrency = items.get(0).getUnitPrice().currency();
+        Currency firstCurrency = items.getFirst().getUnitPrice().currency();
 
         items.forEach(item -> {
             if (!item.getUnitPrice().currency().equals(firstCurrency)) {
