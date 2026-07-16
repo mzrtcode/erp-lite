@@ -13,16 +13,20 @@ dependencies {
 
     // 🧩 Dependencias internas de Spring
     // implementation = uso interno, no lo expongo
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    runtimeOnly 'org.postgresql:postgresql:42.7.11'
+    api 'org.springframework.boot:spring-boot-starter-data-jpa'
+    api 'org.postgresql:postgresql:42.7.11'
+    api 'org.springframework.boot:spring-boot-starter-web'
 
     // 🗄️ Mongo
-    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    api 'org.springframework.boot:spring-boot-starter-data-mongodb'
 
     // ⚡ Redis
-    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
-    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    api 'org.springframework.boot:spring-boot-starter-data-redis'
+    api 'org.springframework.boot:spring-boot-starter-cache'
 
     // ✅ Validación
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    api 'org.springframework.boot:spring-boot-starter-validation'
+
+    // ☁️ AWS
+    api "software.amazon.awssdk:s3:2.47.4"
 }
