@@ -1,0 +1,7 @@
+jsonplaceholder:
+  api:
+    base-url: https://jsonplaceholder.typeicode.com
+    users-endpoint: /users
+    connect-timeout: 5000
+    read-timeout: 10000
+    enabled: true
