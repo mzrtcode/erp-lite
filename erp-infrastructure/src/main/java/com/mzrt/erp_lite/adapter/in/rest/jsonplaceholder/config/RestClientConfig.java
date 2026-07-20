@@ -1,6 +1,6 @@
-package com.mzrt.erp_lite.adapter.out.persistence.jsonplaceholder.config;
+package com.mzrt.erp_lite.adapter.in.rest.jsonplaceholder.config;
 
-import com.mzrt.erp_lite.adapter.out.persistence.jsonplaceholder.model.JsonPlaceholderConfigModel;
+import com.mzrt.erp_lite.adapter.in.rest.jsonplaceholder.model.JsonPlaceholderConfigModel;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.client.ClientHttpRequestInterceptor;
 import org.springframework.web.client.RestClient;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
@@ -47,10 +46,14 @@ public class RestClientConfig {
         return (req,body, execution) -> {
             log.info("Calling JsonPlaceHolder API");
             final long  startTime = System.currentTimeMillis();
-            try (var response = execution.execute(req, body)) {
+            try {
+                var response = execution.execute(req, body);
                 final long endTime = System.currentTimeMillis() - startTime;
                 log.info("Method: {} URI: {} Headers: {} Execution time: {} ms Status: {}", req.getMethod(), req.getURI(), req.getHeaders(), endTime, response.getStatusCode());
                 return response;
+            } catch (Exception e){
+                log.error("Error calling JsonPlaceHolder API", e);
+                throw e;
             }
         };
     }

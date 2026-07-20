@@ -1,9 +1,9 @@
-package com.mzrt.erp_lite.adapter.in.rest.mapper;
+package com.mzrt.erp_lite.adapter.in.rest.jsonplaceholder.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-import com.mzrt.erp_lite.adapter.in.rest.UserDTO;
+import com.mzrt.erp_lite.adapter.in.rest.jsonplaceholder.dto.UserDTO;
 import com.mzrt.erp_lite.domain.customer.CustomerInfo;
 
 @Mapper(componentModel = "spring")

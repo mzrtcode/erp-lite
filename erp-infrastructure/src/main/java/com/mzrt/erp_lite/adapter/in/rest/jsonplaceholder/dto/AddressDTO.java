@@ -1,4 +1,4 @@
-package com.mzrt.erp_lite.adapter.in.rest;
+package com.mzrt.erp_lite.adapter.in.rest.jsonplaceholder.dto;
 
 public record AddressDTO(
         String street,

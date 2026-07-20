@@ -1,4 +1,4 @@
-package com.mzrt.erp_lite.adapter.in.rest;
+package com.mzrt.erp_lite.adapter.in.rest.jsonplaceholder.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

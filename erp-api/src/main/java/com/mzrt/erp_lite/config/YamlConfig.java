@@ -1,7 +1,7 @@
 package com.mzrt.erp_lite.config;
 
 import com.mzrt.erp_lite.adapter.out.persistence.aws.model.AwsModelConfig;
-import com.mzrt.erp_lite.adapter.out.persistence.jsonplaceholder.model.JsonPlaceholderConfigModel;
+import com.mzrt.erp_lite.adapter.in.rest.jsonplaceholder.model.JsonPlaceholderConfigModel;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;

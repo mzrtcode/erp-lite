@@ -1,4 +1,4 @@
-package com.mzrt.erp_lite.adapter.out.persistence.jsonplaceholder.model;
+package com.mzrt.erp_lite.adapter.in.rest.jsonplaceholder.model;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Positive;
